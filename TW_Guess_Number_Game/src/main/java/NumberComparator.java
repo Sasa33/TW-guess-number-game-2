@@ -8,16 +8,16 @@ public class NumberComparator {
 //        else
 //            return "2A2B";
 
-        int num_A = 0;
-        int num_B = 0;
+        int numA = 0;
+        int numB = 0;
         for(int i=0; i<randomNumber.length(); i++) {
             if(randomNumber.charAt(i) == inputNumber.charAt(i)) {
-                num_A++;
+                numA++;
             } else if(randomNumber.indexOf(inputNumber.charAt(i)) != -1){
-                num_B++;
+                numB++;
             }
         }
 
-        return num_A+"A"+num_B+"B";
+        return numA+"A"+numB+"B";
     }
 }
