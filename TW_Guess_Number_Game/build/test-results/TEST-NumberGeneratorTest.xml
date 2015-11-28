@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NumberGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-26T14:13:56" hostname="sasa-R453" time="0.007">
+  <properties/>
+  <testcase name="should_continuously_generate_at_least_100_different_numbers" classname="NumberGeneratorTest" time="0.004"/>
+  <testcase name="should_generate_4_unique_characters_in_each_bit" classname="NumberGeneratorTest" time="0.001"/>
+  <testcase name="should_generate_4_digits_number" classname="NumberGeneratorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

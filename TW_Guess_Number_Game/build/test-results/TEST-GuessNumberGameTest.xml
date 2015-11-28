@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GuessNumberGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-26T14:13:55" hostname="sasa-R453" time="1.304">
+  <properties/>
+  <testcase name="should_get_4A0B_when_guessNumber_is_the_same_as_generateNumber" classname="GuessNumberGameTest" time="1.304"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
