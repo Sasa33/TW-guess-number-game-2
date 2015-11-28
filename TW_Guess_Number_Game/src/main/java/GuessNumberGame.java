@@ -13,27 +13,32 @@ public class GuessNumberGame {
 
     public void start()
     {
-        System.out.println("Welcome!\n");
-        String result = "";
+        String randomNumber = generator.generate();
+        System.out.println("Welcome!");
+        System.out.println("");
+
+        String result;
         for (int limit = 6; limit > 0; limit--) {
             System.out.println("Please input your number("+limit+"):");
 
-            String randomNumber = generator.generate();
             Scanner s = new Scanner(System.in);
             String guessNumber = s.next();
 
             if(isDuplicated(guessNumber))
             {
-                System.out.println("Cannot input duplicate numbers!\n");
+                System.out.println("Cannot input duplicate numbers!");
+                System.out.println("");
+
             } else {
-                result = comparator.compare(generator.generate(), guessNumber);
+                result = comparator.compare(randomNumber, guessNumber);
                 if (result.equals("4A0B"))
                 {
                     System.out.println("Congratulations!");
                     break;
                 } else
                 {
-                    System.out.println(result+"\n");
+                    System.out.println(result);
+                    System.out.println("");
                 }
             }
         }
@@ -43,7 +48,7 @@ public class GuessNumberGame {
 
     public boolean isDuplicated(String s)
     {
-        return (s.chars().distinct().count() != s.length()) ? true : false;
+        return (s.chars().distinct().count() != s.length());
 
     }
 }
